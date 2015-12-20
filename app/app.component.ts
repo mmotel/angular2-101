@@ -1,13 +1,12 @@
 import {Component} from 'angular2/core';
-
-interface Hero {
-  id :number;
-  name :string;
-}
+import {Hero} from './hero';
+import {HeroDetailComponent} from './hero-detail.component';
+import {HeroListComponent} from './hero-list.component';
 
 @Component({
   selector: 'my-app',
-  templateUrl: '../templates/app.component.html'
+  templateUrl: '../templates/app.component.html',
+  directives: [HeroDetailComponent, HeroListComponent]
 })
 export class AppComponent {
   public title :string = 'Tour of Heroes';
@@ -15,10 +14,15 @@ export class AppComponent {
   public heroes :Hero[] = HEROES;
   public selectedHero :Hero;
 
-  onSelect (hero :Hero) :void {
+  onSelected (hero) :void {
     this.selectedHero = hero;
   }
+
+  onUnselected () :void {
+    this.selectedHero = null;
+  }
 }
+
 
 var HEROES: Hero[] = [
   { "id": 11, "name": "Mr. Nice" },

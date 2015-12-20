@@ -9,9 +9,9 @@ import {Hero} from './hero';
 })
 export class HeroDetailComponent {
   public hero: Hero;
-  public closed: EventEmitter<any> = new EventEmitter();
+  public closed :EventEmitter<any> = new EventEmitter();
 
-  close () :void {
+  close () {
     this.closed.emit(null);
   }
 }

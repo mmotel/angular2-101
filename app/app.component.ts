@@ -14,11 +14,11 @@ export class AppComponent {
   public heroes :Hero[] = HEROES;
   public selectedHero :Hero;
 
-  onSelected (hero) :void {
+  onSelected (hero) {
     this.selectedHero = hero;
   }
 
-  onUnselected () :void {
+  onUnselected () {
     this.selectedHero = null;
   }
 }

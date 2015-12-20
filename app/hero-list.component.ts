@@ -13,7 +13,7 @@ export class HeroListComponent {
   public selected :EventEmitter<Hero> = new EventEmitter();
   public unselected :EventEmitter<any> = new EventEmitter();
 
-  onSelect (hero :Hero) :void {
+  onSelect (hero :Hero) {
     if (this.selectedHero === hero) {
       this.unselected.emit(null);
     } else {

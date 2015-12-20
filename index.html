@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Angular 2 - Tour of Heroes</title>
 
     <!-- 1. Load libraries -->
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
@@ -22,12 +22,18 @@
       System.import('app/boot')
             .then(null, console.error.bind(console));
     </script>
-
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet">
   </head>
 
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
-  </body>
+    <section class="container">
+      <my-app>Loading...</my-app>
+    </section>
 
+    <!-- third-party libraries (jQuery only for Bootstrap!) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

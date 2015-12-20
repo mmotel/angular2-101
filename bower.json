@@ -1,0 +1,22 @@
+{
+  "name": "angular2-101",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mmotel/angular2-101",
+  "authors": [
+    "mmotel <mateuszmotel@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11",
+    "bootstrap": "3"
+  }
+}

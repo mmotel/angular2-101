@@ -4,21 +4,20 @@ import {Hero} from './hero';
 @Component({
   selector: 'my-hero-list',
   inputs: ['heroes', 'selectedHero'],
-  outputs: ['selected', 'unselected'],
+  outputs: ['selectedHeroChange'],
   templateUrl: '../templates/hero-list.component.html'
 })
 export class HeroListComponent {
   public heroes :Hero[];
   public selectedHero :Hero;
-  public selected :EventEmitter<Hero> = new EventEmitter();
-  public unselected :EventEmitter<any> = new EventEmitter();
+  public selectedHeroChange :EventEmitter<Hero> = new EventEmitter();
 
   onSelect (hero :Hero) {
     if (this.selectedHero === hero) {
-      this.unselected.emit(null);
+      this.selectedHeroChange.emit(null);
     } else {
       this.selectedHero = hero;
-      this.selected.emit(this.selectedHero);
+      this.selectedHeroChange.emit(this.selectedHero);
     }
   }
 }

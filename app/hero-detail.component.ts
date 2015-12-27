@@ -1,17 +1,18 @@
 import {Component, EventEmitter} from 'angular2/core';
-import {Hero} from './hero';
+import {Hero, HEROES_POWERS} from './hero';
 
 @Component({
   selector: 'my-hero-detail',
   inputs: ['hero'],
-  outputs: ['closed'],
+  outputs: ['heroChange'],
   templateUrl: '../templates/hero-detail.component.html'
 })
 export class HeroDetailComponent {
   public hero: Hero;
-  public closed :EventEmitter<any> = new EventEmitter();
+  public heroChange :EventEmitter<Hero> = new EventEmitter();
+  public powers :string[] = HEROES_POWERS;
 
   close () {
-    this.closed.emit(null);
+    this.heroChange.emit(null);
   }
 }

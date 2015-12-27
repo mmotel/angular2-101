@@ -12,7 +12,7 @@ export class HeroService {
     return new Promise(resolve => {
       setTimeout(() => {
         resolve(HEROES);
-      }, 2000);
+      }, 500);
     });
   }
 }

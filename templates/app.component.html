@@ -2,16 +2,21 @@
   <h1>{{title}} <small>{{subtitle}}</small></h1>
 </div>
 
+<div class="row">
+  <div class="col-lg-12">
+    <hero-form></hero-form>
+  </div>
+</div>
+
 
 <div class="row">
   <div class="col-lg-4">
-    <my-hero-list [heroes]="heroes" [selectedHero]="selectedHero"
-      (selected)="onSelected($event)" (unselected)="onUnselected($event)">
+    <my-hero-list [heroes]="heroes" [(selectedHero)]="selectedHero">
     </my-hero-list>
   </div>
 
   <div class="col-lg-8">
-    <my-hero-detail [hero]="selectedHero" (closed)="onUnselected($event)">
+    <my-hero-detail [(hero)]="selectedHero">
     </my-hero-detail>
   </div>
 </div>

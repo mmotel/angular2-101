@@ -1,5 +1,6 @@
 <h2>My Heroes
-  <img *ngIf="!heroes" src="assets/gfx/loading.gif" class="loading-animation"></h2>
+  <img *ngIf="!heroes" src="assets/gfx/loading.gif" class="loading-animation">
+</h2>
 
 <ul class="list-group">
   <li *ngFor="#hero of heroes" (click)="onSelect(hero)"

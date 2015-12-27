@@ -1,14 +1,14 @@
 import {Hero} from './hero';
 
 export var HEROES: Hero[] = [
-  { "id": 11, "name": "Mr. Nice" },
-  { "id": 12, "name": "Narco" },
-  { "id": 13, "name": "Bombasto" },
-  { "id": 14, "name": "Celeritas" },
-  { "id": 15, "name": "Magneta" },
-  { "id": 16, "name": "RubberMan" },
-  { "id": 17, "name": "Dynama" },
-  { "id": 18, "name": "Dr IQ" },
-  { "id": 19, "name": "Magma" },
-  { "id": 20, "name": "Tornado" }
+  new Hero (11, "Mr. Nice", "Sth"),
+  new Hero (12, "Narco", "Sth 2"),
+  new Hero (13, "Bombasto", "Sth 3"),
+  new Hero (14, "Celeritas", "Sth 4"),
+  new Hero (15, "Magneta", "Sth 5"),
+  new Hero (16, "RubberMan", "Sth 6"),
+  new Hero (17, "Dynama", "Sth 7"),
+  new Hero (18, "Dr IQ", "Sth 8"),
+  new Hero (19, "Magma", "Sth 9"),
+  new Hero (20, "Tornado", "Sth 10")
 ]

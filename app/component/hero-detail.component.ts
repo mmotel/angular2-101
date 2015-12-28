@@ -1,11 +1,11 @@
 import {Component, EventEmitter} from 'angular2/core';
-import {Hero, HEROES_POWERS} from './hero';
+import {Hero, HEROES_POWERS} from '../model/hero';
 
 @Component({
   selector: 'my-hero-detail',
   inputs: ['hero'],
   outputs: ['heroChange'],
-  templateUrl: '../templates/hero-detail.component.html'
+  templateUrl: '../../templates/hero-detail.component.html'
 })
 export class HeroDetailComponent {
   public hero: Hero;

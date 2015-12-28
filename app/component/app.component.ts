@@ -1,6 +1,6 @@
 import {Component, OnInit} from 'angular2/core';
-import {Hero} from './hero';
-import {HeroService} from './hero.service';
+import {Hero} from '../model/hero';
+import {HeroService} from '../service/hero.service';
 import {HeroDetailComponent} from './hero-detail.component';
 import {HeroListComponent} from './hero-list.component';
 import {HeroFormComponent} from './hero-form.component';
@@ -8,7 +8,7 @@ import {HeroFormComponent} from './hero-form.component';
 
 @Component({
   selector: 'my-app',
-  templateUrl: '../templates/app.component.html',
+  templateUrl: '../../templates/app.component.html',
   directives: [HeroDetailComponent, HeroListComponent, HeroFormComponent],
   providers: [HeroService]
 })

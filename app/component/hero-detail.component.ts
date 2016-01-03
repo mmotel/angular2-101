@@ -5,7 +5,7 @@ import {Hero, HEROES_POWERS} from '../model/hero';
   selector: 'my-hero-detail',
   inputs: ['hero'],
   outputs: ['heroChange'],
-  templateUrl: '../../templates/hero-detail.component.html'
+  templateUrl: './app/templates/hero-detail.component.html'
 })
 export class HeroDetailComponent {
   public hero: Hero;

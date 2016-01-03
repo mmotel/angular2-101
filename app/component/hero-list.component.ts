@@ -5,7 +5,7 @@ import {Hero} from '../model/hero';
   selector: 'my-hero-list',
   inputs: ['heroes', 'selectedHero'],
   outputs: ['selectedHeroChange'],
-  templateUrl: '../../templates/hero-list.component.html'
+  templateUrl: './app/templates/hero-list.component.html'
 })
 export class HeroListComponent {
   public heroes :Hero[];
@@ -14,10 +14,10 @@ export class HeroListComponent {
 
   onSelect (hero :Hero) {
     if (this.selectedHero === hero) {
-      this.selectedHeroChange.emit(null);
+      this.selectedHero = null;
     } else {
       this.selectedHero = hero;
-      this.selectedHeroChange.emit(this.selectedHero);
     }
+    this.selectedHeroChange.emit(this.selectedHero);
   }
 }

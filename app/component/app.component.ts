@@ -8,7 +8,7 @@ import {HeroFormComponent} from './hero-form.component';
 
 @Component({
   selector: 'my-app',
-  templateUrl: '../../templates/app.component.html',
+  templateUrl: './app/templates/app.component.html',
   directives: [HeroDetailComponent, HeroListComponent, HeroFormComponent],
   providers: [HeroService]
 })

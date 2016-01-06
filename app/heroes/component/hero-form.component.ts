@@ -4,7 +4,7 @@ import {Hero, HEROES_POWERS} from '../model/hero';
 
 @Component({
   selector: 'hero-form',
-  templateUrl: './app/templates/hero-form.component.html'
+  templateUrl: './app/heroes/template/hero-form.component.html'
 })
 export class HeroFormComponent {
   private powers :string[] = HEROES_POWERS;

@@ -1,16 +1,14 @@
 import {Component, OnInit} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {Hero} from '../model/hero';
-import {HeroService} from '../service/hero.service';
-import {HeroDetailComponent} from './hero-detail.component';
-import {HeroListComponent} from './hero-list.component';
-import {HeroFormComponent} from './hero-form.component';
-import {CrisisListComponent} from './crisis-list.component';
+import {HeroDetailComponent} from './heroes/component/hero-detail.component';
+import {HeroListComponent} from './heroes/component/hero-list.component';
+import {HeroFormComponent} from './heroes/component/hero-form.component';
+import {CrisisListComponent} from './crisis/component/crisis-list.component';
 
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app/templates/app.component.html',
+  templateUrl: './app/app.component.html',
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([

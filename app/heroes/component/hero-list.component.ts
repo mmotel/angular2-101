@@ -3,7 +3,7 @@ import {Hero} from '../model/hero';
 
 @Component({
   selector: 'my-hero-list',
-  templateUrl: './app/templates/hero-list.component.html'
+  templateUrl: './app/heroes/template/hero-list.component.html'
 })
 export class HeroListComponent {
   @Input() heroes :Hero[];

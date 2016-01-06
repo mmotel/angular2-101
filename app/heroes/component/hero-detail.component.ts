@@ -3,7 +3,7 @@ import {Hero, HEROES_POWERS} from '../model/hero';
 
 @Component({
   selector: 'my-hero-detail',
-  templateUrl: './app/templates/hero-detail.component.html'
+  templateUrl: './app/heroes/template/hero-detail.component.html'
 })
 export class HeroDetailComponent {
   @Input() hero: Hero;

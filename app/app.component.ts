@@ -14,7 +14,7 @@ import {CrisisListComponent} from './crisis/component/crisis-list.component';
 @RouteConfig([
   {path: '/crisis-center', name: 'CrisisCenter', component: CrisisListComponent},
   {path: '/heroes', name: 'Heroes', component: HeroListComponent},
-  {path: '/hero/add', name: 'AddHero', component: HeroFormComponent}
+  {path: '/hero/:id', name: 'HeroDetail', component: HeroDetailComponent}
 ])
 export class AppComponent implements OnInit {
   public title :string = 'Tour of Heroes';

@@ -1,7 +1,10 @@
 <div *ngIf="hero">
-  <button type="button" class="close" aria-label="Close"><span
-    aria-hidden="true" (click)="close()">&times;</span></button>
-  <h2>{{hero.name}} details!</h2>
+
+  <h2>
+      <button class="btn btn-default" [routerLink]="['Heroes']">Back</button> 
+    {{hero.name}} details!
+  </h2>
+
 
   <div class="jumbotron form-horizontal">
     <div class="form-group">
